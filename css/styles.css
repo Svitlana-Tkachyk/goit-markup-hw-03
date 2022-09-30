@@ -22,6 +22,7 @@
     --main-color:var(#212121);
     --main-font:var('Roboto', sans-serift)
 }
+
 p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
@@ -59,16 +60,11 @@ font-family: 'Roboto',sans-serif;
     outline: 2px solid red;
     margin: 0 auto;
 }
-.extent {
-    background-color: #F5F5F5;
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+
 
 .header {
-background-color: #FFFFFF;
-padding-top: 24px;
-padding-bottom: 25px;
+    border-bottom: 1px solid #ececec;
+
 }
 .header-container{
 display: flex;
@@ -171,12 +167,13 @@ gap: 50px;
 }
 /*---------MAIN---------*/
 
-.section {
+.section-extent{
     background: #2F303A;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
 }
+
 
 .section-title {
     font-family: 'Roboto';
@@ -207,13 +204,15 @@ gap: 50px;
     background-color: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    min-width: 216px;
+    padding: 10px 32px;
 }
 .section-button:hover {
     background-color: #188CE8;}
 
 /*--------ОСОБЛИВОСТІ-------*/
-
+.main {
+    padding: 94px 0;
+}
 
 .main-title {
     position: absolute;
@@ -245,7 +244,6 @@ gap: 50px;
     text-transform: uppercase;
     color: var(--main-color);
     margin-bottom: 10px;
-    margin-top: 94px;
 }
 
 .main-text {
@@ -258,7 +256,10 @@ gap: 50px;
     color: #757575;
 }
 /*---ЧИМ МИ ЗАЙМАЄМОСЯ-------*/
+.activity-extent {
+    padding-bottom: 94px;
 
+}
 
 .activity-title {
     font-family: var(--main-font);
@@ -275,7 +276,7 @@ gap: 50px;
 .activity-list {
     display: flex;
     gap: 30px;
-    width: calc(100%-60px)/3 ;
+    width: calc((100%-60px) / 3) ;
 }
 
 .activity-image {
@@ -285,7 +286,10 @@ gap: 50px;
 
 /*-------НАША КОМАНДА-------*/
 
-
+.team-extent {
+    background-color: #F5F4FA;
+    padding-bottom: 94px;
+}
 .team-title {
     font-family: var(--main-font);
     font-style: normal;
@@ -301,17 +305,22 @@ gap: 50px;
 .team-list {
     display: flex;
     gap: 30px;
-    width: calc(100%-90px)/4;
+    width: calc((100%-90px) / 4);
+}
+.team-link {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    
 }
 
-.team-img{
+.team-img {
 width: 270px;
 height: 260px;
-margin-bottom: 30px;
+padding: 30px 30px;
 }
 
-.team-content{
-    margin-top: 30px;
+.team-content {
     margin-bottom: 30px;
 }
 
@@ -355,6 +364,7 @@ margin-bottom: 30px;
     letter-spacing: 0.03em;
     color: #FFFFFF;
     margin-bottom: 20px;
+    display: block;
 }
 
 .logo-accent {
@@ -400,12 +410,15 @@ color: #188CE8;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 9px;
 }
 .footer-tel:hover{
     color: #188CE8;
 }
 /*------ФІЛЬТРИ------*/
-
+.filters-extent {
+background: #FFFFFF;
+}
 
 .filters-title {
     position: absolute;
@@ -423,7 +436,8 @@ color: #188CE8;
 .filters-list {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    margin-bottom: 50px;
+    gap: 8px;
 }
 
 
@@ -436,8 +450,9 @@ color: #188CE8;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    margin-bottom: 56px;
     border-radius: 4px;
+    padding: 6px 22px;
+    border: none;
 }
 .filters-button:hover {
     background-color: #188CE8;
@@ -453,7 +468,7 @@ color: #188CE8;
     gap: 30px;
  }
  .projekts-link {
-    width: calc(100%-60px)/3;
+    width: calc(100%-60px) / 30;
  }
 
  .projekts-image {
@@ -465,6 +480,7 @@ color: #188CE8;
 
  .projects-content{
     padding: 24px 20px;
+    border: 1px solid #ececec;
  }
 
  .projekts-title {
