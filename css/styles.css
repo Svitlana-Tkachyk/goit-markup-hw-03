@@ -257,7 +257,7 @@ gap: 50px;
 }
 /*---ЧИМ МИ ЗАЙМАЄМОСЯ-------*/
 .activity-extent {
-    padding-bottom: 94px 0;
+    padding-bottom: 94px;
 
 }
 
@@ -287,7 +287,7 @@ gap: 50px;
 /*-------НАША КОМАНДА-------*/
 
 .team-extent {
-    background-color: #F5F5F5;
+    background: #F5F4FA;
     padding-bottom: 94px 0;
 }
 .team-title {
